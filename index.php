@@ -27,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">OUR ROOMS</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#under-dev" href="#">OUR ROOMS</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,11 +41,11 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#" tabindex="-1" >Contact Us</a>
+            <a class="nav-link " href="#" ata-bs-toggle="modal" data-bs-target="#under-dev" tabindex="-1" >Contact Us</a>
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-outline-success me-2" type="button">Book Room</button>
+          <button class="btn btn-outline-success me-2" ata-bs-toggle="modal" data-bs-target="#under-dev" type="button">Book Room</button>
           <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         </form>
       </div>
@@ -152,21 +152,21 @@
                     <div class="carousel-item active">
                       <img src="asset/imgs/slide1.jpg" class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-secondary">First slide label</h5>
+                        <h3 class="text-secondary">STANDARD ROOM</h3>
                         <p>Some representative placeholder content for the first slide.</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src="asset/imgs/slide2.jpg" class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
+                        <h3>SUPPREME ROOM</h3>
                         <p>Some representative placeholder content for the second slide.</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src="asset/imgs/slide3.jpg" class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
+                        <h3>EX-FAMILY LODGE</h3>
                         <p>Some representative placeholder content for the third slide.</p>
                       </div>
                     </div>
@@ -182,7 +182,28 @@
                 </div>
             </div><!--========= endOf showRooms ============ -->
             <div class="col col-md-auto">
-              list of rooms
+              <table class="table">
+                <div class="thead">
+                  <div class="tr">
+                    <th scope="col">#</th>
+                    <th scope="col">AVAILABLE ROOMS</th>
+                  </div>
+                </div>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>STANDARD ROOMS</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>SUPPREM ROOM</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>EX-FAMILY LODGE</td>
+                  </tr>
+                </tbody>
+              </table>
             </div> <!-- ============ end showroomText =========== -->
           </div>
         </div>
@@ -222,15 +243,50 @@
         </div>
     </div>
   </div>
-</div>
+</div> <!-- ===== Modal End -->
+
+<!-- ======Under Development ========= -->
+<div class="modal fade" id="under-dev" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-align-center" id="exampleModalLabel">Under Development</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+        </div>
+        <div class="modal-body justify-content-center">
+          <div class="row m-auto" id="login_user_png">
+            <img src="asset/imgs/underDev.png" alt="">
+        </div>
+        <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="button" class="btn btn-primary">our rooms</button>
+          </div>
+      </div>
+    </div>
+  </div> 
+  </div><!-- ===== Modal End -->
+<!--  -->
 
 
 
 
-
-
-
-
+<!-- FOOTER START HERE  -->
+  <footer class="container-fluid bg-dark text-light "style="height:60">
+    <div class="row g-2 p-4">
+      <div class="col-md-8">
+        <p>&copy; 2024 Extee Crystal Hotel. &middot; <a href="#">Awards</a> &middot; <a href="#">BOOKING SERVICE</a></p>
+      </div>
+      <div class="col-sm">
+         &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+      </div>
+      <div class="col md auto">
+        <p class="float-end"><a href="#">Back to top</a></p>
+      </div>
+    </div>
+    
+    
+  </footer>
 
   <!-- javascript -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
