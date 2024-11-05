@@ -11,10 +11,39 @@
 
 /* =============global ================== */
 
+/* login */
+#login_icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 50%;
+    
+}
+
 /* ============== main-content ================= */
 
-/* ------------ main_content ---------------- */
+/* ------------ _content ---------------- */
 .main_content {
     width: 100% !important;
     background-color: red;
 }
+
+
+
+
+/*  ========= MEDIA QUERY ============= */
+
+ /* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+ /* X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */
